@@ -1,3 +1,10 @@
+// Author: Nikki Asteinza (2024-06-22)
+// This Unity script is responsible for capturing frames from a specified camera and transmitting them as images
+// via a WebSocket connection. It integrates with a WebSocket client and sets up event listeners for connection and disconnection events.
+// When the WebSocket connection is established, the script starts a coroutine that continuously captures the camera's render texture,
+// encodes it to a PNG format, converts it to a Base64 string, and sends it as a JSON message over the WebSocket.
+// The script also includes cleanup routines to release resources appropriately.
+
 using System;
 using System.Collections;
 using UnityEngine;
