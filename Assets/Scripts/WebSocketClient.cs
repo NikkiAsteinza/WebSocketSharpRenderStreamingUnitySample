@@ -1,7 +1,15 @@
-using UnityEngine;
-using WebSocketSharp;
+// Author: Nikki Asteinza (2024-06-22)
+//This Unity script, called WebSocketClient, manages the connection to a WebSocket server and facilitates communication through custom events.
+
+//Functionality:
+//WebSocket Connection: Establishes a WebSocket connection to the specified server.
+//Custom Events: Uses UnityEvent to handle connection events, received messages, and connection closure.
+//Message and Error Handling: Processes messages received from the server and handles connection errors.
+
 using System;
+using UnityEngine;
 using UnityEngine.Events;
+using WebSocketSharp;
 
 [System.Serializable]
 public class OnOpen : UnityEvent<WebSocket>{}
