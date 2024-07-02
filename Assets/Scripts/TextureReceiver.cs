@@ -1,3 +1,16 @@
+// Author: Nikki Asteinza (2024-06-22)
+//This Unity script is designed to receive images through a WebSocket connection and render them onto a RenderTexture.
+
+//Functionality:
+//WebSocket Connection Management: Listens for connection, message, and close events from a WebSocket server.
+//Image Processing: Decodes base64 image data received from the WebSocket server and converts it into a Texture2D.
+//Rendering: Renders the decoded image onto a RenderTexture for display in Unity.
+
+//Key Features:
+//Event Handling: Utilizes UnityEvent to handle WebSocket events.
+//Image Decoding: Processes JSON messages, extracts base64-encoded image data, and converts it to a texture.
+//Thread Safety: Ensures image processing runs on Unity's main thread to avoid concurrency issues.
+
 using System;
 using UnityEngine;
 using WebSocketSharp;
