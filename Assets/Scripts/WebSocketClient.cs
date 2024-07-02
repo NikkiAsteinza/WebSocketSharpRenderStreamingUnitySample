@@ -1,5 +1,5 @@
 // Author: Nikki Asteinza (2024-06-22)
-//This Unity script, called WebSocketClient, manages the connection to a WebSocket server and facilitates communication through custom events.
+//This Unity script manages the connection to a WebSocket server and facilitates communication through custom events.
 
 //Functionality:
 //WebSocket Connection: Establishes a WebSocket connection to the specified server.
